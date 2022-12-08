@@ -8,6 +8,11 @@ public class MagnetLink
         public IList<string> Trackers { get; }
         public string Hash { get; }
 
+        /// <summary>
+        /// Magnet link parser
+        /// </summary>
+        /// <param name="magnetLink">Magnet link</param>
+        /// <exception cref="ArgumentException">Throws if magnet has no hash</exception>
         public MagnetLink(string magnetLink)
         {
             DisplayName = ParseDisplayName(magnetLink);
@@ -30,7 +35,6 @@ public class MagnetLink
             var trackersMatch = Regex.Matches(magnetLink, "tr=([^&]*)");
             return trackersMatch.Select(m => Uri.UnescapeDataString(m.Groups[1].Value)).ToList();
         }
-
         private static string ParseHash(string magnetLink)
         {
             var hashMatch = Regex.Match(magnetLink, "xt=urn:btih:([^&]*)");
@@ -38,6 +42,7 @@ public class MagnetLink
             {
                 return hashMatch.Groups[1].Value;
             }
-            return null;
+
+            throw new ArgumentException("Invalid magnet: Contains no hash");
         }
     }
