@@ -1,0 +1,33 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "EosTorrent", "src\EosTorrent\EosTorrent.csproj", "{8C677E19-E932-45AA-BD92-D5EE78D4686D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UnitTests", "tests\UnitTests\UnitTests.csproj", "{673E76F2-2077-45D1-B2B9-D85BD93B2573}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "SolutionItems", "SolutionItems", "{BEEA37A6-8DE8-4949-B4B6-95E8E7DEA52A}"
+	ProjectSection(SolutionItems) = preProject
+		.gitignore = .gitignore
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{8C677E19-E932-45AA-BD92-D5EE78D4686D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8C677E19-E932-45AA-BD92-D5EE78D4686D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8C677E19-E932-45AA-BD92-D5EE78D4686D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8C677E19-E932-45AA-BD92-D5EE78D4686D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{673E76F2-2077-45D1-B2B9-D85BD93B2573}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{673E76F2-2077-45D1-B2B9-D85BD93B2573}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{673E76F2-2077-45D1-B2B9-D85BD93B2573}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{673E76F2-2077-45D1-B2B9-D85BD93B2573}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
