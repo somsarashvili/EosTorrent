@@ -29,4 +29,10 @@ public class MagnetLinkShould
         Assert.That(magnet.Trackers, Has.Exactly(1).Matches<string>(x => x == "udp://tracker.example.org:8080"));
         Assert.That(magnet.Trackers, Has.Exactly(1).Matches<string>(x => x == "udp://tracker.example.com:8080"));
     }
+
+    [Test]
+    public void ThrowArgumentException()
+    {
+        Assert.Throws<ArgumentException>(() => new MagnetLink(""));
+    }
 }
