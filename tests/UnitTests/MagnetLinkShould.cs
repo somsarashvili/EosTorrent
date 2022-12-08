@@ -1,5 +1,4 @@
 using EosTorrent;
-using NUnit.Framework;
 
 namespace UnitTests;
 
